@@ -6,13 +6,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "fgumv4q7h4m6"
+            "id": "d79ojau8knqo"
           }
         },
         "id": "siteConfig",
         "type": "ContentType",
-        "createdAt": "2023-08-29T10:33:57.661Z",
-        "updatedAt": "2023-08-29T10:33:58.222Z",
+        "createdAt": "2023-09-03T18:13:00.400Z",
+        "updatedAt": "2023-09-03T18:13:01.088Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -21,8 +21,8 @@
           }
         },
         "publishedVersion": 1,
-        "publishedAt": "2023-08-29T10:33:58.222Z",
-        "firstPublishedAt": "2023-08-29T10:33:58.222Z",
+        "publishedAt": "2023-09-03T18:13:01.088Z",
+        "firstPublishedAt": "2023-09-03T18:13:01.088Z",
         "createdBy": {
           "sys": {
             "type": "Link",
@@ -70,13 +70,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "fgumv4q7h4m6"
+            "id": "d79ojau8knqo"
           }
         },
-        "id": "hero",
+        "id": "stats",
         "type": "ContentType",
-        "createdAt": "2023-08-29T10:33:57.696Z",
-        "updatedAt": "2023-08-29T11:47:03.804Z",
+        "createdAt": "2023-09-03T18:13:00.401Z",
+        "updatedAt": "2023-09-03T18:34:18.569Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -84,9 +84,9 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 7,
-        "publishedAt": "2023-08-29T11:47:03.804Z",
-        "firstPublishedAt": "2023-08-29T10:34:00.002Z",
+        "publishedVersion": 3,
+        "publishedAt": "2023-09-03T18:34:18.569Z",
+        "firstPublishedAt": "2023-09-03T18:13:01.884Z",
         "createdBy": {
           "sys": {
             "type": "Link",
@@ -101,8 +101,296 @@
             "id": "1JaKkSjxX8SGAGTUKV3JYB"
           }
         },
-        "publishedCounter": 4,
-        "version": 8,
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        }
+      },
+      "displayField": "heading",
+      "name": "Stats",
+      "description": "",
+      "fields": [
+        {
+          "id": "heading",
+          "name": "Heading",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "defaultValue": {
+            "en-US": "This is a title",
+            "es": "Esto es un título"
+          },
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "body",
+          "name": "Body",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "defaultValue": {
+            "en-US": "\nThis is body text / Este es el cuerpo del texto."
+          },
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "theme",
+          "name": "Theme",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "in": [
+                "primary",
+                "dark"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "stats",
+          "name": "Stats",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "statItem"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "d79ojau8knqo"
+          }
+        },
+        "id": "button",
+        "type": "ContentType",
+        "createdAt": "2023-09-03T18:13:00.418Z",
+        "updatedAt": "2023-09-03T18:13:02.169Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2023-09-03T18:13:02.169Z",
+        "firstPublishedAt": "2023-09-03T18:13:02.169Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        }
+      },
+      "displayField": "label",
+      "name": "Button",
+      "description": "",
+      "fields": [
+        {
+          "id": "label",
+          "name": "Label",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "url",
+          "name": "URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "theme",
+          "name": "Theme",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "in": [
+                "default",
+                "outline"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "d79ojau8knqo"
+          }
+        },
+        "id": "statItem",
+        "type": "ContentType",
+        "createdAt": "2023-09-03T18:13:00.472Z",
+        "updatedAt": "2023-09-03T18:13:01.632Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2023-09-03T18:13:01.632Z",
+        "firstPublishedAt": "2023-09-03T18:13:01.632Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        }
+      },
+      "displayField": "label",
+      "name": "StatItem",
+      "description": "",
+      "fields": [
+        {
+          "id": "label",
+          "name": "Label",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "value",
+          "name": "Value",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "d79ojau8knqo"
+          }
+        },
+        "id": "hero",
+        "type": "ContentType",
+        "createdAt": "2023-09-03T18:13:00.478Z",
+        "updatedAt": "2023-09-03T18:33:03.353Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-09-03T18:33:03.353Z",
+        "firstPublishedAt": "2023-09-03T18:13:01.354Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -124,7 +412,8 @@
           "validations": [
           ],
           "defaultValue": {
-            "en-US": "This is a title / Esto es un título"
+            "en-US": "This is a title",
+            "es": "Esto es un título"
           },
           "disabled": false,
           "omitted": false
@@ -194,300 +483,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "fgumv4q7h4m6"
-          }
-        },
-        "id": "statItem",
-        "type": "ContentType",
-        "createdAt": "2023-08-29T10:33:57.696Z",
-        "updatedAt": "2023-08-29T11:47:56.380Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 7,
-        "publishedAt": "2023-08-29T11:47:56.380Z",
-        "firstPublishedAt": "2023-08-29T10:34:00.670Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "publishedCounter": 4,
-        "version": 8,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        }
-      },
-      "displayField": "label",
-      "name": "StatItem",
-      "description": "",
-      "fields": [
-        {
-          "id": "label",
-          "name": "Label",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "validations": [
-          ],
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "value",
-          "name": "Value",
-          "type": "Symbol",
-          "localized": true,
-          "required": false,
-          "validations": [
-          ],
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "fgumv4q7h4m6"
-          }
-        },
-        "id": "stats",
-        "type": "ContentType",
-        "createdAt": "2023-08-29T10:33:57.707Z",
-        "updatedAt": "2023-08-29T11:48:24.264Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 7,
-        "publishedAt": "2023-08-29T11:48:24.264Z",
-        "firstPublishedAt": "2023-08-29T10:34:00.382Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "publishedCounter": 4,
-        "version": 8,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        }
-      },
-      "displayField": "heading",
-      "name": "Stats",
-      "description": "",
-      "fields": [
-        {
-          "id": "heading",
-          "name": "Heading",
-          "type": "Symbol",
-          "localized": true,
-          "required": true,
-          "validations": [
-          ],
-          "defaultValue": {
-            "en-US": "This is a title / Esto es un título"
-          },
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "body",
-          "name": "Body",
-          "type": "Text",
-          "localized": true,
-          "required": false,
-          "validations": [
-          ],
-          "defaultValue": {
-            "en-US": "\nThis is body text / Este es el cuerpo del texto."
-          },
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "theme",
-          "name": "Theme",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "validations": [
-            {
-              "in": [
-                "primary",
-                "dark"
-              ]
-            }
-          ],
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "stats",
-          "name": "Stats",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "validations": [
-          ],
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Link",
-            "validations": [
-              {
-                "linkContentType": [
-                  "statItem"
-                ]
-              }
-            ],
-            "linkType": "Entry"
-          }
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "fgumv4q7h4m6"
-          }
-        },
-        "id": "button",
-        "type": "ContentType",
-        "createdAt": "2023-08-29T10:33:57.711Z",
-        "updatedAt": "2023-08-29T11:46:16.530Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 7,
-        "publishedAt": "2023-08-29T11:46:16.530Z",
-        "firstPublishedAt": "2023-08-29T10:33:59.325Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "publishedCounter": 4,
-        "version": 8,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        }
-      },
-      "displayField": "label",
-      "name": "Button",
-      "description": "",
-      "fields": [
-        {
-          "id": "label",
-          "name": "Label",
-          "type": "Symbol",
-          "localized": true,
-          "required": true,
-          "validations": [
-          ],
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "url",
-          "name": "URL",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "validations": [
-          ],
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "theme",
-          "name": "Theme",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "validations": [
-            {
-              "in": [
-                "default",
-                "outline"
-              ]
-            }
-          ],
-          "disabled": false,
-          "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "fgumv4q7h4m6"
+            "id": "d79ojau8knqo"
           }
         },
         "id": "page",
         "type": "ContentType",
-        "createdAt": "2023-08-29T10:33:57.728Z",
-        "updatedAt": "2023-08-31T08:02:50.030Z",
+        "createdAt": "2023-09-03T18:13:00.489Z",
+        "updatedAt": "2023-09-03T18:13:02.457Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -495,9 +497,9 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 7,
-        "publishedAt": "2023-08-31T08:02:50.030Z",
-        "firstPublishedAt": "2023-08-29T10:33:59.577Z",
+        "publishedVersion": 1,
+        "publishedAt": "2023-09-03T18:13:02.457Z",
+        "firstPublishedAt": "2023-09-03T18:13:02.457Z",
         "createdBy": {
           "sys": {
             "type": "Link",
@@ -512,8 +514,8 @@
             "id": "1JaKkSjxX8SGAGTUKV3JYB"
           }
         },
-        "publishedCounter": 4,
-        "version": 8,
+        "publishedCounter": 1,
+        "version": 2,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -583,13 +585,13 @@
         "type": "EditorInterface",
         "space": {
           "sys": {
-            "id": "fgumv4q7h4m6",
+            "id": "d79ojau8knqo",
             "type": "Link",
             "linkType": "Space"
           }
         },
         "version": 2,
-        "createdAt": "2023-08-29T10:33:58.371Z",
+        "createdAt": "2023-09-03T18:13:01.221Z",
         "createdBy": {
           "sys": {
             "id": "1JaKkSjxX8SGAGTUKV3JYB",
@@ -597,7 +599,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2023-08-29T10:34:01.240Z",
+        "updatedAt": "2023-09-03T18:13:03.106Z",
         "updatedBy": {
           "sys": {
             "id": "1JaKkSjxX8SGAGTUKV3JYB",
@@ -634,13 +636,13 @@
         "type": "EditorInterface",
         "space": {
           "sys": {
-            "id": "fgumv4q7h4m6",
+            "id": "d79ojau8knqo",
             "type": "Link",
             "linkType": "Space"
           }
         },
-        "version": 8,
-        "createdAt": "2023-08-29T10:34:00.198Z",
+        "version": 4,
+        "createdAt": "2023-09-03T18:13:02.049Z",
         "createdBy": {
           "sys": {
             "id": "1JaKkSjxX8SGAGTUKV3JYB",
@@ -648,7 +650,190 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2023-08-29T11:47:04.843Z",
+        "updatedAt": "2023-09-03T18:34:19.201Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1JaKkSjxX8SGAGTUKV3JYB",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "stats",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "heading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "body",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "theme",
+          "widgetId": "dropdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "stats",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "d79ojau8knqo",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2023-09-03T18:13:02.328Z",
+        "createdBy": {
+          "sys": {
+            "id": "1JaKkSjxX8SGAGTUKV3JYB",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-09-03T18:13:04.075Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1JaKkSjxX8SGAGTUKV3JYB",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "button",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "label",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "url",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "theme",
+          "widgetId": "dropdown",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "d79ojau8knqo",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2023-09-03T18:13:01.748Z",
+        "createdBy": {
+          "sys": {
+            "id": "1JaKkSjxX8SGAGTUKV3JYB",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-09-03T18:13:03.084Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1JaKkSjxX8SGAGTUKV3JYB",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "statItem",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "label",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "value",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "d79ojau8knqo",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2023-09-03T18:13:01.507Z",
+        "createdBy": {
+          "sys": {
+            "id": "1JaKkSjxX8SGAGTUKV3JYB",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-09-03T18:33:04.111Z",
         "updatedBy": {
           "sys": {
             "id": "1JaKkSjxX8SGAGTUKV3JYB",
@@ -705,13 +890,13 @@
         "type": "EditorInterface",
         "space": {
           "sys": {
-            "id": "fgumv4q7h4m6",
+            "id": "d79ojau8knqo",
             "type": "Link",
             "linkType": "Space"
           }
         },
-        "version": 8,
-        "createdAt": "2023-08-29T10:34:00.857Z",
+        "version": 2,
+        "createdAt": "2023-09-03T18:13:02.603Z",
         "createdBy": {
           "sys": {
             "id": "1JaKkSjxX8SGAGTUKV3JYB",
@@ -719,190 +904,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2023-08-29T11:47:57.415Z",
-        "updatedBy": {
-          "sys": {
-            "id": "1JaKkSjxX8SGAGTUKV3JYB",
-            "type": "Link",
-            "linkType": "User"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "id": "statItem",
-            "type": "Link",
-            "linkType": "ContentType"
-          }
-        },
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        }
-      },
-      "controls": [
-        {
-          "fieldId": "label",
-          "widgetId": "singleLine",
-          "widgetNamespace": "builtin"
-        },
-        {
-          "fieldId": "value",
-          "widgetId": "singleLine",
-          "widgetNamespace": "builtin"
-        }
-      ]
-    },
-    {
-      "sys": {
-        "id": "default",
-        "type": "EditorInterface",
-        "space": {
-          "sys": {
-            "id": "fgumv4q7h4m6",
-            "type": "Link",
-            "linkType": "Space"
-          }
-        },
-        "version": 8,
-        "createdAt": "2023-08-29T10:34:00.514Z",
-        "createdBy": {
-          "sys": {
-            "id": "1JaKkSjxX8SGAGTUKV3JYB",
-            "type": "Link",
-            "linkType": "User"
-          }
-        },
-        "updatedAt": "2023-08-29T11:48:25.240Z",
-        "updatedBy": {
-          "sys": {
-            "id": "1JaKkSjxX8SGAGTUKV3JYB",
-            "type": "Link",
-            "linkType": "User"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "id": "stats",
-            "type": "Link",
-            "linkType": "ContentType"
-          }
-        },
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        }
-      },
-      "controls": [
-        {
-          "fieldId": "heading",
-          "widgetId": "singleLine",
-          "widgetNamespace": "builtin"
-        },
-        {
-          "fieldId": "body",
-          "widgetId": "markdown",
-          "widgetNamespace": "builtin"
-        },
-        {
-          "fieldId": "theme",
-          "widgetId": "dropdown",
-          "widgetNamespace": "builtin"
-        },
-        {
-          "fieldId": "stats",
-          "widgetId": "entryLinksEditor",
-          "widgetNamespace": "builtin"
-        }
-      ]
-    },
-    {
-      "sys": {
-        "id": "default",
-        "type": "EditorInterface",
-        "space": {
-          "sys": {
-            "id": "fgumv4q7h4m6",
-            "type": "Link",
-            "linkType": "Space"
-          }
-        },
-        "version": 8,
-        "createdAt": "2023-08-29T10:33:59.456Z",
-        "createdBy": {
-          "sys": {
-            "id": "1JaKkSjxX8SGAGTUKV3JYB",
-            "type": "Link",
-            "linkType": "User"
-          }
-        },
-        "updatedAt": "2023-08-29T11:46:17.550Z",
-        "updatedBy": {
-          "sys": {
-            "id": "1JaKkSjxX8SGAGTUKV3JYB",
-            "type": "Link",
-            "linkType": "User"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "id": "button",
-            "type": "Link",
-            "linkType": "ContentType"
-          }
-        },
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        }
-      },
-      "controls": [
-        {
-          "fieldId": "label",
-          "widgetId": "singleLine",
-          "widgetNamespace": "builtin"
-        },
-        {
-          "fieldId": "url",
-          "widgetId": "singleLine",
-          "widgetNamespace": "builtin"
-        },
-        {
-          "fieldId": "theme",
-          "widgetId": "dropdown",
-          "widgetNamespace": "builtin"
-        }
-      ]
-    },
-    {
-      "sys": {
-        "id": "default",
-        "type": "EditorInterface",
-        "space": {
-          "sys": {
-            "id": "fgumv4q7h4m6",
-            "type": "Link",
-            "linkType": "Space"
-          }
-        },
-        "version": 8,
-        "createdAt": "2023-08-29T10:33:59.759Z",
-        "createdBy": {
-          "sys": {
-            "id": "1JaKkSjxX8SGAGTUKV3JYB",
-            "type": "Link",
-            "linkType": "User"
-          }
-        },
-        "updatedAt": "2023-08-31T08:02:50.881Z",
+        "updatedAt": "2023-09-03T18:13:03.169Z",
         "updatedBy": {
           "sys": {
             "id": "1JaKkSjxX8SGAGTUKV3JYB",
@@ -955,84 +957,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "fgumv4q7h4m6"
-          }
-        },
-        "id": "4kqY1iB0OrQxrIfptA3THs",
-        "type": "Entry",
-        "createdAt": "2023-08-29T10:34:06.557Z",
-        "updatedAt": "2023-08-29T12:02:52.886Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 3,
-        "publishedAt": "2023-08-29T12:02:52.886Z",
-        "firstPublishedAt": "2023-08-29T10:34:09.593Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "publishedCounter": 2,
-        "version": 4,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "automationTags": [
-        ],
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "statItem"
-          }
-        }
-      },
-      "fields": {
-        "label": {
-          "en-US": "Graduation rate",
-          "es": "Tasa de graduación"
-        },
-        "value": {
-          "en-US": "100%",
-          "es": "100%"
-        }
-      }
-    },
-    {
-      "metadata": {
-        "tags": [
-        ]
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "fgumv4q7h4m6"
+            "id": "d79ojau8knqo"
           }
         },
         "id": "36U7omnF7aFEHjVKwEhJI7",
         "type": "Entry",
-        "createdAt": "2023-08-29T10:34:06.559Z",
-        "updatedAt": "2023-08-29T11:51:52.812Z",
+        "createdAt": "2023-09-03T18:13:08.421Z",
+        "updatedAt": "2023-09-03T18:13:11.276Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1040,9 +971,9 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2023-08-29T11:51:52.812Z",
-        "firstPublishedAt": "2023-08-29T10:34:10.372Z",
+        "publishedVersion": 1,
+        "publishedAt": "2023-09-03T18:13:11.276Z",
+        "firstPublishedAt": "2023-09-03T18:13:11.276Z",
         "createdBy": {
           "sys": {
             "type": "Link",
@@ -1057,8 +988,8 @@
             "id": "1JaKkSjxX8SGAGTUKV3JYB"
           }
         },
-        "publishedCounter": 2,
-        "version": 4,
+        "publishedCounter": 1,
+        "version": 2,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1099,13 +1030,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "fgumv4q7h4m6"
+            "id": "d79ojau8knqo"
           }
         },
-        "id": "4mV4piJAsPklYM0iPiVbtM",
+        "id": "4kqY1iB0OrQxrIfptA3THs",
         "type": "Entry",
-        "createdAt": "2023-08-29T10:34:06.568Z",
-        "updatedAt": "2023-08-31T08:06:18.335Z",
+        "createdAt": "2023-09-03T18:13:08.429Z",
+        "updatedAt": "2023-09-03T18:13:11.017Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1113,9 +1044,9 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 7,
-        "publishedAt": "2023-08-31T08:06:18.335Z",
-        "firstPublishedAt": "2023-08-29T10:34:09.914Z",
+        "publishedVersion": 1,
+        "publishedAt": "2023-09-03T18:13:11.017Z",
+        "firstPublishedAt": "2023-09-03T18:13:11.017Z",
         "createdBy": {
           "sys": {
             "type": "Link",
@@ -1130,8 +1061,8 @@
             "id": "1JaKkSjxX8SGAGTUKV3JYB"
           }
         },
-        "publishedCounter": 4,
-        "version": 8,
+        "publishedCounter": 1,
+        "version": 2,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1145,17 +1076,18 @@
           "sys": {
             "type": "Link",
             "linkType": "ContentType",
-            "id": "page"
+            "id": "statItem"
           }
         }
       },
       "fields": {
-        "title": {
-          "en-US": "Empty page",
-          "es": "Página vacía"
+        "label": {
+          "en-US": "Graduation rate",
+          "es": "Tasa de graduación"
         },
-        "slug": {
-          "en-US": "/empty"
+        "value": {
+          "en-US": "100%",
+          "es": "100%"
         }
       }
     },
@@ -1169,105 +1101,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "fgumv4q7h4m6"
-          }
-        },
-        "id": "1waD7wlBFDmDTKcI18NXO0",
-        "type": "Entry",
-        "createdAt": "2023-08-29T10:34:06.573Z",
-        "updatedAt": "2023-08-29T11:59:58.202Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 4,
-        "publishedAt": "2023-08-29T11:59:58.202Z",
-        "firstPublishedAt": "2023-08-29T10:34:10.716Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "publishedCounter": 2,
-        "version": 5,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "automationTags": [
-        ],
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "hero"
-          }
-        }
-      },
-      "fields": {
-        "heading": {
-          "en-US": "Can you make the perfect sandwich?",
-          "es": "¿Puedes hacer el sándwich perfecto?"
-        },
-        "body": {
-          "en-US": "HandSandwich™️ is Central Southwestern Ohio's most highly attended sandwich-making class. Don't delay your ability to craft the perfect sandwich.",
-          "es": "HandSandwich™️ es la clase de preparación de sándwiches más concurrida en el suroeste central de Ohio. No demores tu habilidad para elaborar el sándwich perfecto."
-        },
-        "image": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "o1G1j1B3fpZyVGa33M1zJ"
-            }
-          }
-        },
-        "button": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Entry",
-              "id": "36U7omnF7aFEHjVKwEhJI7"
-            }
-          }
-        },
-        "theme": {
-          "en-US": "imgLeft"
-        }
-      }
-    },
-    {
-      "metadata": {
-        "tags": [
-        ]
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "fgumv4q7h4m6"
+            "id": "d79ojau8knqo"
           }
         },
         "id": "3LwBRMadcjbZOr9AHo2KYM",
         "type": "Entry",
-        "createdAt": "2023-08-29T10:34:06.585Z",
-        "updatedAt": "2023-08-29T12:03:24.178Z",
+        "createdAt": "2023-09-03T18:13:08.467Z",
+        "updatedAt": "2023-09-03T18:13:12.191Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1275,9 +1115,9 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2023-08-29T12:03:24.178Z",
-        "firstPublishedAt": "2023-08-29T10:34:08.751Z",
+        "publishedVersion": 1,
+        "publishedAt": "2023-09-03T18:13:12.191Z",
+        "firstPublishedAt": "2023-09-03T18:13:12.191Z",
         "createdBy": {
           "sys": {
             "type": "Link",
@@ -1292,8 +1132,8 @@
             "id": "1JaKkSjxX8SGAGTUKV3JYB"
           }
         },
-        "publishedCounter": 2,
-        "version": 4,
+        "publishedCounter": 1,
+        "version": 2,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1332,13 +1172,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "fgumv4q7h4m6"
+            "id": "d79ojau8knqo"
           }
         },
-        "id": "6C8zTujkczgUh7FNbRNLZA",
+        "id": "4mV4piJAsPklYM0iPiVbtM",
         "type": "Entry",
-        "createdAt": "2023-08-29T10:34:07.305Z",
-        "updatedAt": "2023-08-29T11:59:20.230Z",
+        "createdAt": "2023-09-03T18:13:08.593Z",
+        "updatedAt": "2023-09-03T18:13:11.533Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1346,9 +1186,79 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 4,
-        "publishedAt": "2023-08-29T11:59:20.230Z",
-        "firstPublishedAt": "2023-08-29T10:34:13.120Z",
+        "publishedVersion": 1,
+        "publishedAt": "2023-09-03T18:13:11.533Z",
+        "firstPublishedAt": "2023-09-03T18:13:11.533Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Empty page",
+          "es": "Página vacía"
+        },
+        "slug": {
+          "en-US": "/empty"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "d79ojau8knqo"
+          }
+        },
+        "id": "1waD7wlBFDmDTKcI18NXO0",
+        "type": "Entry",
+        "createdAt": "2023-09-03T18:13:08.598Z",
+        "updatedAt": "2023-09-03T18:31:39.370Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-09-03T18:31:39.370Z",
+        "firstPublishedAt": "2023-09-03T18:13:11.884Z",
         "createdBy": {
           "sys": {
             "type": "Link",
@@ -1364,7 +1274,99 @@
           }
         },
         "publishedCounter": 2,
-        "version": 5,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "hero"
+          }
+        }
+      },
+      "fields": {
+        "heading": {
+          "en-US": "Can you make the perfect sandwich?",
+          "es": "¿Puedes hacer el sándwich perfecto?"
+        },
+        "body": {
+          "en-US": "HandSandwich™️ is Central Southwestern Ohio's most highly attended sandwich-making class. Don't delay your ability to craft the perfect sandwich.",
+          "es": "HandSandwich™️ es la clase de preparación de sándwiches más concurrida en el suroeste central de Ohio. No demores tu habilidad para elaborar el sándwich perfecto."
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6QMJYL7aEwOYNq4yVirpSN"
+            }
+          }
+        },
+        "button": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "36U7omnF7aFEHjVKwEhJI7"
+            }
+          }
+        },
+        "theme": {
+          "en-US": "imgLeft"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "d79ojau8knqo"
+          }
+        },
+        "id": "6C8zTujkczgUh7FNbRNLZA",
+        "type": "Entry",
+        "createdAt": "2023-09-03T18:13:08.606Z",
+        "updatedAt": "2023-09-03T18:13:12.464Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2023-09-03T18:13:12.464Z",
+        "firstPublishedAt": "2023-09-03T18:13:12.464Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1406,13 +1408,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "fgumv4q7h4m6"
+            "id": "d79ojau8knqo"
           }
         },
         "id": "2fOae4R9pYc85bdMEJsE6z",
         "type": "Entry",
-        "createdAt": "2023-08-29T10:34:07.387Z",
-        "updatedAt": "2023-08-29T10:34:12.185Z",
+        "createdAt": "2023-09-03T18:13:09.005Z",
+        "updatedAt": "2023-09-03T18:13:12.716Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1421,8 +1423,8 @@
           }
         },
         "publishedVersion": 1,
-        "publishedAt": "2023-08-29T10:34:12.185Z",
-        "firstPublishedAt": "2023-08-29T10:34:12.185Z",
+        "publishedAt": "2023-09-03T18:13:12.716Z",
+        "firstPublishedAt": "2023-09-03T18:13:12.716Z",
         "createdBy": {
           "sys": {
             "type": "Link",
@@ -1473,172 +1475,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "fgumv4q7h4m6"
-          }
-        },
-        "id": "tnUnQwb0YfqbfdVAtCGSE",
-        "type": "Entry",
-        "createdAt": "2023-08-29T10:34:07.399Z",
-        "updatedAt": "2023-08-29T12:03:42.465Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 4,
-        "publishedAt": "2023-08-29T12:03:42.465Z",
-        "firstPublishedAt": "2023-08-29T10:34:11.125Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "publishedCounter": 2,
-        "version": 5,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "automationTags": [
-        ],
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "statItem"
-          }
-        }
-      },
-      "fields": {
-        "label": {
-          "en-US": "Prefer Ohio-made sandwiches",
-          "es": "Prefiere sándwiches hechos en Ohio"
-        },
-        "value": {
-          "en-US": "98%",
-          "es": "98%"
-        }
-      }
-    },
-    {
-      "metadata": {
-        "tags": [
-        ]
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "fgumv4q7h4m6"
-          }
-        },
-        "id": "4pQBscyvi608EAd3KNoxt9",
-        "type": "Entry",
-        "createdAt": "2023-08-29T10:34:08.313Z",
-        "updatedAt": "2023-08-31T08:06:57.420Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 7,
-        "publishedAt": "2023-08-31T08:06:57.420Z",
-        "firstPublishedAt": "2023-08-29T10:34:14.839Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "publishedCounter": 4,
-        "version": 8,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "1JaKkSjxX8SGAGTUKV3JYB"
-          }
-        },
-        "automationTags": [
-        ],
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "page"
-          }
-        }
-      },
-      "fields": {
-        "title": {
-          "en-US": "Home page",
-          "es": "Página de inicio"
-        },
-        "slug": {
-          "en-US": "/"
-        },
-        "sections": {
-          "en-US": [
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Entry",
-                "id": "1waD7wlBFDmDTKcI18NXO0"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Entry",
-                "id": "55B39LpWGFDQvt4kYYif6g"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "metadata": {
-        "tags": [
-        ]
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "fgumv4q7h4m6"
+            "id": "d79ojau8knqo"
           }
         },
         "id": "55B39LpWGFDQvt4kYYif6g",
         "type": "Entry",
-        "createdAt": "2023-08-29T10:34:08.316Z",
-        "updatedAt": "2023-08-29T12:00:45.201Z",
+        "createdAt": "2023-09-03T18:13:09.009Z",
+        "updatedAt": "2023-09-03T18:13:13.333Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1646,9 +1489,9 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 4,
-        "publishedAt": "2023-08-29T12:00:45.201Z",
-        "firstPublishedAt": "2023-08-29T10:34:14.455Z",
+        "publishedVersion": 1,
+        "publishedAt": "2023-09-03T18:13:13.333Z",
+        "firstPublishedAt": "2023-09-03T18:13:13.333Z",
         "createdBy": {
           "sys": {
             "type": "Link",
@@ -1663,8 +1506,8 @@
             "id": "1JaKkSjxX8SGAGTUKV3JYB"
           }
         },
-        "publishedCounter": 2,
-        "version": 5,
+        "publishedCounter": 1,
+        "version": 2,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1731,13 +1574,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "fgumv4q7h4m6"
+            "id": "d79ojau8knqo"
           }
         },
-        "id": "4NAH9GqPm2W4eYXXEa35mg",
+        "id": "4pQBscyvi608EAd3KNoxt9",
         "type": "Entry",
-        "createdAt": "2023-08-29T10:34:08.326Z",
-        "updatedAt": "2023-08-31T08:05:40.362Z",
+        "createdAt": "2023-09-03T18:13:09.020Z",
+        "updatedAt": "2023-09-03T18:13:13.963Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1745,9 +1588,9 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2023-08-31T08:05:40.362Z",
-        "firstPublishedAt": "2023-08-29T10:34:14.077Z",
+        "publishedVersion": 1,
+        "publishedAt": "2023-09-03T18:13:13.963Z",
+        "firstPublishedAt": "2023-09-03T18:13:13.963Z",
         "createdBy": {
           "sys": {
             "type": "Link",
@@ -1762,8 +1605,96 @@
             "id": "1JaKkSjxX8SGAGTUKV3JYB"
           }
         },
-        "publishedCounter": 2,
-        "version": 4,
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Home page",
+          "es": "Página de inicio"
+        },
+        "slug": {
+          "en-US": "/"
+        },
+        "sections": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1waD7wlBFDmDTKcI18NXO0"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "55B39LpWGFDQvt4kYYif6g"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "d79ojau8knqo"
+          }
+        },
+        "id": "4NAH9GqPm2W4eYXXEa35mg",
+        "type": "Entry",
+        "createdAt": "2023-09-03T18:13:09.024Z",
+        "updatedAt": "2023-09-03T18:13:13.677Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2023-09-03T18:13:13.677Z",
+        "firstPublishedAt": "2023-09-03T18:13:13.677Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1801,9 +1732,7 @@
           ]
         }
       }
-    }
-  ],
-  "assets": [
+    },
     {
       "metadata": {
         "tags": [
@@ -1814,13 +1743,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "fgumv4q7h4m6"
+            "id": "d79ojau8knqo"
           }
         },
-        "id": "o1G1j1B3fpZyVGa33M1zJ",
-        "type": "Asset",
-        "createdAt": "2023-08-29T10:34:02.696Z",
-        "updatedAt": "2023-08-29T10:34:06.265Z",
+        "id": "tnUnQwb0YfqbfdVAtCGSE",
+        "type": "Entry",
+        "createdAt": "2023-09-03T18:13:10.713Z",
+        "updatedAt": "2023-09-03T18:13:12.977Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1828,9 +1757,9 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 2,
-        "publishedAt": "2023-08-29T10:34:06.265Z",
-        "firstPublishedAt": "2023-08-29T10:34:06.265Z",
+        "publishedVersion": 1,
+        "publishedAt": "2023-09-03T18:13:12.977Z",
+        "firstPublishedAt": "2023-09-03T18:13:12.977Z",
         "createdBy": {
           "sys": {
             "type": "Link",
@@ -1846,7 +1775,80 @@
           }
         },
         "publishedCounter": 1,
-        "version": 3,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "statItem"
+          }
+        }
+      },
+      "fields": {
+        "label": {
+          "en-US": "Prefer Ohio-made sandwiches",
+          "es": "Prefiere sándwiches hechos en Ohio"
+        },
+        "value": {
+          "en-US": "98%",
+          "es": "98%"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "d79ojau8knqo"
+          }
+        },
+        "id": "6QMJYL7aEwOYNq4yVirpSN",
+        "type": "Asset",
+        "createdAt": "2023-09-03T18:27:53.023Z",
+        "updatedAt": "2023-09-03T18:29:02.949Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-09-03T18:29:02.949Z",
+        "firstPublishedAt": "2023-09-03T18:27:56.528Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1JaKkSjxX8SGAGTUKV3JYB"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 5,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1859,17 +1861,14 @@
         "title": {
           "en-US": "Sandwich Hero (FPO)"
         },
-        "description": {
-          "en-US": ""
-        },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/fgumv4q7h4m6/o1G1j1B3fpZyVGa33M1zJ/dbbe57e4dfb9ebdb985a75545e8ace8e/fpo-sandwich.jpg",
+            "url": "//images.ctfassets.net/d79ojau8knqo/6QMJYL7aEwOYNq4yVirpSN/f26fe9e1c462ac1c1315afb4726aefa5/fpo-sandwich.jpg",
             "details": {
-              "size": 2148104,
+              "size": 283026,
               "image": {
-                "width": 5000,
-                "height": 4000
+                "width": 1200,
+                "height": 960
               }
             },
             "fileName": "fpo-sandwich.jpg",
@@ -1890,13 +1889,13 @@
       "optional": false,
       "sys": {
         "type": "Locale",
-        "id": "3GQTk3lE5rFS3ySDs3Uao2",
+        "id": "3mkWLzCfg5j3Na53qNhWmw",
         "version": 1,
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "fgumv4q7h4m6"
+            "id": "d79ojau8knqo"
           }
         },
         "environment": {
@@ -1904,7 +1903,7 @@
             "type": "Link",
             "linkType": "Environment",
             "id": "master",
-            "uuid": "a9ea1433-25f0-4d72-b191-cf4b8c581672"
+            "uuid": "960ae79d-f32e-44dc-8ed7-027dc9191552"
           }
         },
         "createdBy": {
@@ -1914,7 +1913,7 @@
             "id": "1JaKkSjxX8SGAGTUKV3JYB"
           }
         },
-        "createdAt": "2023-08-29T10:33:53Z",
+        "createdAt": "2023-09-03T18:12:56Z",
         "updatedBy": {
           "sys": {
             "type": "Link",
@@ -1922,7 +1921,7 @@
             "id": "1JaKkSjxX8SGAGTUKV3JYB"
           }
         },
-        "updatedAt": "2023-08-29T10:33:53Z"
+        "updatedAt": "2023-09-03T18:12:56Z"
       }
     },
     {
@@ -1935,13 +1934,13 @@
       "optional": false,
       "sys": {
         "type": "Locale",
-        "id": "3LmxEg0VGFUvlxo9amR5UE",
+        "id": "3q9Wc21b5gZ9VQPAX6DdYT",
         "version": 1,
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "fgumv4q7h4m6"
+            "id": "d79ojau8knqo"
           }
         },
         "environment": {
@@ -1949,7 +1948,7 @@
             "type": "Link",
             "linkType": "Environment",
             "id": "master",
-            "uuid": "a9ea1433-25f0-4d72-b191-cf4b8c581672"
+            "uuid": "960ae79d-f32e-44dc-8ed7-027dc9191552"
           }
         },
         "createdBy": {
@@ -1959,7 +1958,7 @@
             "id": "1JaKkSjxX8SGAGTUKV3JYB"
           }
         },
-        "createdAt": "2023-08-29T10:33:57Z",
+        "createdAt": "2023-09-03T18:12:59Z",
         "updatedBy": {
           "sys": {
             "type": "Link",
@@ -1967,7 +1966,7 @@
             "id": "1JaKkSjxX8SGAGTUKV3JYB"
           }
         },
-        "updatedAt": "2023-08-29T10:33:57Z"
+        "updatedAt": "2023-09-03T18:12:59Z"
       }
     }
   ],
@@ -2026,13 +2025,13 @@
       },
       "sys": {
         "type": "Role",
-        "id": "3HH2ULLyFc56LF9h1il5z4",
+        "id": "3mM3TlC5AVHczit9nnD3UM",
         "version": 0,
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "fgumv4q7h4m6"
+            "id": "d79ojau8knqo"
           }
         },
         "createdBy": {
@@ -2042,7 +2041,7 @@
             "id": "1JaKkSjxX8SGAGTUKV3JYB"
           }
         },
-        "createdAt": "2023-08-29T10:33:54Z",
+        "createdAt": "2023-09-03T18:12:56Z",
         "updatedBy": {
           "sys": {
             "type": "Link",
@@ -2050,7 +2049,7 @@
             "id": "1JaKkSjxX8SGAGTUKV3JYB"
           }
         },
-        "updatedAt": "2023-08-29T10:33:54Z"
+        "updatedAt": "2023-09-03T18:12:56Z"
       }
     }
   ]
