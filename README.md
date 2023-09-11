@@ -1,4 +1,4 @@
-# Localization (i18n) Example with Next.js + Contentful
+# Field-level Localization (i18n) Example with Next.js + Contentful
 
 ## Creating a Stackbit Project via the UI
 
